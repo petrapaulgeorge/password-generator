@@ -1,0 +1,43 @@
+body {
+    background-color: #13011d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background-color: #892CDC;
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto 40px;
+    grid-template-areas: 
+            "h h h"
+            ". c ."
+            "f f f";
+}
+
+#header {
+    grid-area: h;
+    background-color: #52057B;
+}
+
+#header h1 {
+    color: #BC6FF1;
+    text-align: center;
+}
+
+#content {
+    grid-area: c;
+    background-color: #E3ACF9;
+    text-align: center;
+}
+
+#footer {
+    grid-area: f;
+    background-color: #BC6FF1;
+}
+
+#display-password {
+    font-size: 20px;
+    text-align: center;
+}
